@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RewindCoder Digital</title>
+    <title>Prometus</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" >
@@ -24,7 +24,6 @@
 
     <!-- Theme CSS -->
     <link href="{{ url_for('static',filename='css/creative.min.css') }}" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -84,13 +83,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">The Rundown</h2>
+                    <h2 class="section-heading">Quick Rundown</h2>
                     <hr class="light">
                     <p class="text-faded">I started out this career path later than most typically would. Worked
                     minimum wage jobs till I put fingers to keyboard. I soon found an affinity towards the challenges of
                     programming and grew to enjoy the work. Self-educated, University approved, ready to apply.</p>
                     <a href="#resume" class="page-scroll btn btn-default btn-xl sr-button">Quick View</a>
-                    <a href="#resume" class="page-scroll btn btn-default btn-xl sr-button">Download Resume</a>
+                    <a href="{{ url_for('static',filename='files/No_cover_resume.pdf') }}" class="page-scroll btn btn-default btn-xl sr-button" download>Download Resume</a>
                 </div>
             </div>
         </div>
@@ -107,34 +106,28 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="resume-box">
-                        <i class="fa fa-4x fa-music text-primary sr-icons"></i>
-                        <h3>dummy value</h3>
-                        <p class="text-muted">dummy value</p>
+                        <i class="fa fa-4x fa-thumbs-up text-primary sr-icons"></i>
+                        <h3>Python</h3>
+                        <p class="text-muted">Applied Pygame modules to Create Musically driven Snake like game</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="resume-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>dummy value</h3>
-                        <p class="text-muted">dummy value</p>
+                        <i class="fa fa-4x fa-tasks text-primary sr-icons"></i>
+                        <h3>Web And Internet Programming</h3>
+                        <p class="text-muted">Applied Model Controller View Java, JSPs, phpMyAdmin were utilized in the web applications.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="resume-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>dummy value</h3>
-                        <p class="text-muted">dummy value</p>
+                        <i class="fa fa-4x fa-folder-open text-primary sr-icons"></i>
+                        <h3>Java</h3>
+                        <p class="text-muted">Strong fundamentals of Data structures and Object Oriented Programming</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="resume-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>dummy value</h3>
-                        <p class="text-muted">dummy value</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -142,46 +135,46 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/1.jpg') }}" class="portfolio-box">
-                        <img src="{{ url_for('static',filename='img/portfolio/thumbnails/1.jpg') }}" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-4">
+                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/git.png') }}" class="portfolio-box">
+                        <img src="{{ url_for('static',filename='img/portfolio/thumbnails/git.png') }}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                     GitHub
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    All Work
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/2.jpg') }}" class="portfolio-box">
-                        <img src="{{ url_for('static',filename='img/portfolio/fullsize/2.jpg') }}" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-4">
+                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/frontPi.jpg') }}" class="portfolio-box">
+                        <img src="{{ url_for('static',filename='img/portfolio/thumbnails/frontPi.jpg') }}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Linux Server
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    DIY Site Host
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/3.jpg') }}" class="portfolio-box">
-                        <img src="{{ url_for('static',filename='img/portfolio/fullsize/3.jpg') }}" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-4">
+                    <a href="{{ url_for('static',filename='img/portfolio/fullsize/home.png') }}" class="portfolio-box">
+                        <img src="{{ url_for('static',filename='img/portfolio/thumbnails/home.png') }}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Home
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Personal Site
                                 </div>
                             </div>
                         </div>
